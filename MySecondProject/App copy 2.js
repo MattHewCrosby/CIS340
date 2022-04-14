@@ -6,22 +6,18 @@ export default function MyApp() {
   return (
     <View>
       <Text>
-        Hello There. I am a student in CIS340! 
+        {"\n\n\n\n\n\n"}
+        Hello There. I am a student in CIS340! {"\n"}
         </Text>
+        <TextInput 
+        style={{
+          height: 40,
+          borderColor: "gray",
+          borderWidth: 1
+        }}
+        />
       </View>
    
   );
 }
-export default function MultiComp(){
-  return(
-  <View>
-<Text> {"\n\n\n\n\n\n\n"} Welcome to My Class </Text>
-<MyApp />
-<MyApp />
-<MyApp />
-<MyApp />
-    </View>
-  )
-}
-
 
