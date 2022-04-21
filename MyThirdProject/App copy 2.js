@@ -1,10 +1,18 @@
 import  React  from 'react';
-import {  Text, TextInput, View } from 'react-native';
+import {  Text, View, Image } from 'react-native';
 
-export default function MyDog() {
+export default function CatApp() {
+  let pic = {url: "https://raw.githubsercontent.com/AbdunabiRamadan/CIS340/master/images/dog2.png"}
   return (
-    <View>
-       <Image source = "https://raw.githubsercontent.com/AbdunabiRamadan/CIS340/master/images/dog2.png"></Image>
+    <View style={{
+      flex: 1,
+      justifyContent: 'center',
+      alignItems: 'center'
+    }}>
+       <Image source = {pic}
+    style = {{width: 200, height: 200}}
+    />
+    <Text>Hello this is my Cat</Text>
     </View>
 
   );
