@@ -1,20 +1,44 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import  React from 'react';
+import { Text, View, FlatList } from 'react-native';
 
-export default function App() {
+
+
+ 
+
+export default  StatesApp = () => {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
+   <View style={{flex: 1, paddingTop:22}}>
+     <FlatList
+     data={[
+       {key: 'Alabama'},
+       {key: 'Alaska'},
+       {key: 'Arizona'},
+       {key: 'Arkansas'},
+       {key: 'California'},
+       {key: 'Colorado'},
+       {key: 'Delaware'},
+       {key: 'Florida'},
+       {key: 'Georgia'},
+       {key: 'Hawaii'},
+       {key: 'Idaho'},
+       {key: 'Illinois'},
+       {key: 'Indiana'},
+       {key: 'Iowa'},
+       {key: 'Kansas'},
+       {key: 'Kentucky'},
+       {key: 'Maine'},
+       {key: 'Maryland'},
+       {key: 'Massachussets'},
+       {key: 'Michigan'},
+       {key: 'Minnesota'},
+       {key: 'Mississippi'},
+       
+     ]}
+     returnItem={({item}) => <Text style= {{padding: 10, fontSize: 20, height: 44}}> {item.key} </Text>}
+     />
+   </View>
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+  );
+  }
+
+
